@@ -1,0 +1,71 @@
+{
+  "id": "261b0fcc-c7e0-4f11-9797-196c50c92c90",
+  "version": "2.0",
+  "name": "Microsoft",
+  "url": "https://dopt.gov.in/",
+  "tests": [{
+    "id": "eff1320c-8107-4e40-8e61-57e395614dd3",
+    "name": "https://dopt.gov.in/",
+    "commands": [{
+      "id": "8b2c7067-4c8f-407e-9da9-592ec23127c5",
+      "comment": "",
+      "command": "open",
+      "target": "https://dopt.gov.in/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1be775c4-7c01-41f2-b434-43f73da22b38",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1322x754",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0be24f3a-b65c-488b-b0ca-500e4cde3508",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-xs-12:nth-child(1) a:nth-child(1) > h2",
+      "targets": [
+        ["css=.col-xs-12:nth-child(1) a:nth-child(1) > h2", "css:finder"],
+        ["xpath=//section[@id='fontSize']/div/div/div/div[2]/div/div/div/div/div/div[2]/div/div/div/a/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f061ef8a-a27d-4553-ae17-edb765311bb0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Download (1.46 MB)",
+      "targets": [
+        ["linkText=Download (1.46 MB)", "linkText"],
+        ["css=.views-row-first a", "css:finder"],
+        ["xpath=//a[contains(text(),'Download (1.46 MB)')]", "xpath:link"],
+        ["xpath=//table[@id='addCaption']/tbody/tr/td[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://dopt.gov.in/sites/default/files/Lokpal_Adv_Panel_English_0.pdf')]", "xpath:href"],
+        ["xpath=//td[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Download (1.46 MB) ')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win6845",
+      "windowTimeout": 2000
+    }, {
+      "id": "38a8f621-7824-476b-a54f-9f732522dced",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win6845}",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "6b821aac-31b1-4382-aafd-77f0360d87e3",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://dopt.gov.in/"],
+  "plugins": []
+}
